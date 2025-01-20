@@ -10,7 +10,7 @@ let config = {
     height: 480,
     //backgroundColor: '#000000',
     parent: 'phaser-example',
-    scene: [Play,MainMenu,Rocket]
+    scene: [Play,MainMenu]
 }
 //this.scene.start("playScene")
 let game = new Phaser.Game(config)
@@ -18,3 +18,5 @@ let game = new Phaser.Game(config)
 let borderUISize = game.config.height / 15
 let borderPadding = borderUISize / 3
 // green UI background
+let keyFIRE, keyRESET, keyLEFT, keyRIGHT
+
